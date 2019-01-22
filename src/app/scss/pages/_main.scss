@@ -18,24 +18,106 @@ $theme-white: #EFEBE4;
   position: absolute;
   width: 100%; height: 100%;
   left: 0; top: 0;
+  text-align: center;
 }
 .logo {
-  position: absolute;
-  display: block;
+  position: relative;
   width: 60vmin; height: 20vmin;
-  left: calc(50% - 30vmin); top: 3vmin;
+  margin: 2vmin auto;
   background-image: url("~src/assets/images/logo.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60vmin;
 }
 .description {
-  position: absolute;
-  width: 80vmin; height: 30vmin;
-  left: calc(50% - 40vmin); top: 23vmin;
+  position: relative;
+  width: 80vmin; height: auto;
+  margin: 1vmin auto;
   font-family: "Arial-Rounded-Bold", "Open Sans", sans-serif, Roboto, serif;
   text-align: center;
   line-height: 30px;
   font-size: 16px;
   color: $theme-brown;
 }
+.article {
+  position: relative;
+  width: 80%; height: auto;
+  margin: 6vmin auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  a {
+    position: relative;
+    width: 40vmin; height: 30vmin;
+    background-color: $theme-brown;
+    border-radius: 10px;
+    margin: 3vmin 3vmin;
+    overflow: hidden;
+    box-shadow: $theme-brown 0 0 10px;
+    text-decoration: none;
+    &:hover { box-shadow: $theme-brown 0 0 25px ;}
+    transition: all .2s ease 0s;
+  }
+  .content-preview {
+    position: relative;
+    width: 90%; height: 80%;
+    margin: 2vmin auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .2s ease 0s;
+  }
+  .content-title {
+    position: relative;
+    margin: 0 2vmin;
+    transform: translateY(-55%);
+    color: $theme-white;
+    font-family: "Arial-Rounded-Bold", "Open Sans", sans-serif, Roboto, serif;
+    text-align: left;
+    font-size: 15px;
+  }
+}
+.footer {
+  position: relative;
+  margin: 3vmin auto;
+  margin-top: 7vmin;
+  font-size: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  a {
+    margin-left: 1.5vmin; margin-right: 1.5vmin;
+    color: $theme-brown;
+    text-decoration: none;
+    transition: all .2s ease 0s;
+    &:hover { transform: scale(1.2) ;}
+  }
+}
+/*
+ * mobile
+ */
+@media screen and (max-width: 760px){
+  .article {
+    justify-content: center;
+    a {
+      width: 70vmin; height: 52.5vmin;
+      margin: 4vmin 3vmin;
+    }
+    .content-preview { margin: 3vmin auto ;}
+    .content-title {
+      font-size: 10px;
+      margin: 0 3vmin;
+      transform: translateY(-40%);
+    }
+  }
+  .footer {
+    a { margin-left: 2vmin; margin-right: 2vmin ;}
+  }
+}
+/*
+ * animations
+ */
+.logo { animation: fadein .5s ease 0s forwards ;}
+.description { animation: fadein .5s ease 0s forwards ;}
+.article { animation: fadein .5s ease 0s forwards ;}
+.footer { animation: fadein .5s ease 0s forwards ;}
