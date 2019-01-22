@@ -45,7 +45,7 @@ $theme-white: #EFEBE4;
   margin: 6vmin auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: center;
   a {
     position: relative;
     width: 40vmin; height: 30vmin;
@@ -98,7 +98,6 @@ $theme-white: #EFEBE4;
  */
 @media screen and (max-width: 760px){
   .article {
-    justify-content: center;
     a {
       width: 70vmin; height: 52.5vmin;
       margin: 4vmin 3vmin;
@@ -115,6 +114,9 @@ $theme-white: #EFEBE4;
     margin-top: 7vmin;
     a { margin-left: 3vmin; margin-right: 3vmin ;}
   }
+}
+@media screen and (min-width: 1024px){
+  .article { justify-content: left ;}
 }
 /*
  * animations
