@@ -12,7 +12,6 @@ export class AppComponent {
 
 window.onload = function() {
     const prewrap = <HTMLElement>document.getElementsByClassName('prewrap')[0];
-    prewrap.style.animation = 'fadeout .8s ease 1.8s forwards';
 
     prewrap.addEventListener('animationend', function(e) {
         if (e.animationName === 'fadeout') {
