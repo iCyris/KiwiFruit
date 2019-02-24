@@ -1,0 +1,135 @@
+/*
+ * Index page
+ */
+.preload {
+    position: fixed;
+    width: 100%; height: 100%;
+    left: 0; top: 0;
+    background-color: $theme-brown;
+    .cover {
+        position: absolute;
+        width: 100%; height: 100%;
+        &::before, &::after {
+            position: absolute; content: "";
+            width: 100%; height: 100%;
+            left: 0; top: 0;
+            background-color: $theme-white;
+            transform: scale(0);
+            transform-origin: center;
+        }
+        &::before { transform-origin: left top; }
+        &::after  { transform-origin: right bottom; }
+    }
+    .icon {
+        position: absolute;
+        width: 10vmin; height: 10vmin;
+        left: calc(50% - 5vmin); top: calc(50% - 5vmin);
+        background-image: url("/images/kiwi.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    z-index: 1000;
+}
+.logo {
+    position: relative;
+    width: 60vmin; height: 20vmin;
+    margin: 0 auto;
+    margin-top: 2vmin;
+    background-image: url("/images/logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60vmin;
+}
+.description {
+    position: relative;
+    width: 80vmin; height: auto;
+    margin: 0 auto;
+    margin-top: 3vmin;
+    font-family: "Arial-Rounded-Bold", "Open Sans", sans-serif, Roboto, serif;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    color: $theme-brown;
+}
+.article {
+    position: relative;
+    width: 75%; height: auto;
+    margin: 0 auto;
+    margin-top: 8vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    a {
+        position: relative;
+        width: 40vmin; height: 29vmin;
+        background-color: $theme-brown;
+        box-sizing: border-box;
+        padding: 15px;
+        border-radius: 7px;
+        margin-bottom: 5vmin;
+        overflow: hidden;
+        box-shadow: $theme-brown 0 0 10px;
+        text-decoration: none;
+        transition: all .2s ease 0s;
+        &:hover { box-shadow: $theme-brown 0 0 25px; }
+        &::before, &::after {
+            position: absolute; content: "";
+            width: 0; height: 0;
+            background-color: $theme-green;
+            transition: all .5s ease;
+            z-index: 50;
+        }
+        &::before { left: 0;  top: 0   ; }
+        &::after  { right: 0; bottom: 0; }
+        &:hover::before, &:hover::after { width: 100%; height: 100%; }
+    }
+    img {
+        position: relative;
+        width: 100%;
+        border-radius: 7px;
+        transition: all .5s ease 0s;
+        z-index: 100;
+    }
+    h4 {
+        position: relative;
+        margin-top: 8px;
+        margin-bottom: 0;
+        color: $theme-white;
+        font-family: "Arial-Rounded-Bold", "Open Sans", sans-serif, Roboto, serif;
+        text-align: left;
+        font-size: 16px;
+        letter-spacing: 1px;
+        z-index: 100;
+    }
+}
+.footer {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 7vmin;
+    padding-bottom: 3vmin;
+    font-size: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    a {
+        margin-left: 1.5vmin; margin-right: 1.5vmin;
+        color: $theme-brown;
+        text-decoration: none;
+        transition: all .2s ease 0s;
+        &:hover { transform: scale(1.2) ;}
+    }
+}
+
+/*
+ * Animations
+ */
+.title, .article, .footer { animation: fadein .5s ease 0s forwards; }
+
+.preload {
+    animation: fadeout .8s ease 1.7s forwards;
+    .cover {
+        &::before, &::after {
+            animation: scale0-1 .8s ease 1s forwards;
+        }
+    }
+}
