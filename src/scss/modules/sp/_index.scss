@@ -2,6 +2,17 @@
  * Index Page (sp)
 */
 @media screen and (max-width: 760px){
+    .preload {
+        .icon {
+            width: 20vmin; height: 20vmin;
+            left: calc(50% - 10vmin); top: calc(50% - 10vmin);
+        }
+    }
+    .logo {
+        width: 70vmin;
+        background-size: 70vmin;
+        margin-top: 5vmin;
+    }
     .description {
         margin-top: 5vmin;
         font-size: 16px;

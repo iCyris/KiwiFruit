@@ -16,7 +16,7 @@ window.onload = function() {
 // render
 const project = content_json.map(el =>
     <a href={el.link} key={el.id} target="_blank" rel="noopener noreferrer" className="content">
-        <img src={ el.thumb } />
+        <img src={ el.thumb } alt={el.title}/>
         <h4>{el.title}</h4>
     </a>
 );
