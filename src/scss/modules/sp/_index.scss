@@ -22,7 +22,7 @@
         margin-top: 10vmin;
         a {
             width: 100%; height: 215px;
-            margin-right: 0;
+            margin-left: 0;
             margin-bottom: 8vmin;
             padding: 15px;
         }
@@ -39,10 +39,11 @@
 }
 @media screen and (min-width: 761px) and (max-width: 900px) {
     .article {
+        width: 90vmin;
+        justify-content: center;
         a {
-            width: 100%; height: 390px;
-            margin-right: 0;
-            padding: 25px;
+            margin-left: 20px;
+            margin-bottom: 20px;
         }
     }
 }
