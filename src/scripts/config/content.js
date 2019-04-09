@@ -14,5 +14,5 @@ export default [
         "thumb": "/images/thumb/small/hello.png",
         "thumb_large": "",
         "link": "./content/hello",
-    },
+    }
 ]

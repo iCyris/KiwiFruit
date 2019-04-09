@@ -53,7 +53,7 @@
 }
 .article {
     position: relative;
-    width: 75%; height: auto;
+    width: 1100px; height: auto;
     margin: 0 auto;
     margin-top: 8vmin;
     display: flex;
@@ -61,13 +61,13 @@
     justify-content: left;
     a {
         position: relative;
-        width: 340px; height: 240px;
+        width: 320px; height: 230px;
         background-color: $theme-brown;
         box-sizing: border-box;
         padding: 16px;
-        border-radius: 12px;
-        margin-right: 20px;
-        margin-bottom: 30px;
+        border-radius: 14px;
+        margin-left: 35px;
+        margin-bottom: 35px;
         overflow: hidden;
         box-shadow: $theme-brown 0 0 10px;
         text-decoration: none;
