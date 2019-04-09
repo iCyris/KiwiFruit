@@ -1,6 +1,275 @@
 /*
  * Keyframes
  */
+@keyframes flip-type1 {
+    0% {
+        transform: rotateY(-180deg);
+        opacity: 0;
+        transform-origin: 0 50%;
+        background-color: #7B8D8E;
+    }
+    4% {
+        background-color: #7B8D8E;
+    }
+    5% {
+        background-color: #c2be65;
+    }
+    10% {
+        transform: rotateY(0);
+        opacity: 1;
+        background-color: #c2be65;
+        transform-origin: 0 50%;
+    }
+    11% {
+        background-color: #c2be65;
+        transform-origin: 100% 50%;
+    }
+    50% {
+        transform: rotateY(0);
+    }
+    51% {
+        transform-origin: 100% 50%;
+    }
+    60% {
+        transform: rotateY(180deg);
+        opacity: 1;
+        background-color: #c2be65;
+    }
+    61% {
+        opacity: 0;
+    }
+    100% {
+        z-index: 10;
+        transform: rotateY(180deg);
+        opacity: 0;
+        transform-origin: 100% 50%;
+        background-color: #c2be65;
+    }
+}
+@keyframes flip-type2 {
+    0% {
+        transform: rotateY(-180deg);
+        opacity: 0;
+        transform-origin: 0 50%;
+        background-color: #7B8D8E;
+    }
+    4% {
+        background-color: #7B8D8E;
+    }
+    5% {
+        background-color: #62a6a2;
+    }
+    10% {
+        transform: rotateY(0);
+        opacity: 1;
+        background-color: #62a6a2;
+        transform-origin: 0 50%;
+    }
+    11% {
+        background-color: #62a6a2;
+        transform-origin: 100% 50%;
+    }
+    49% {
+        background-color: #62a6a2;
+    }
+    50% {
+        transform: rotateY(0);
+        background-color: #c2be65;
+    }
+    51% {
+        transform-origin: 100% 50%;
+        background-color: #c2be65;
+    }
+    55% {
+        background-color: #c2be65;
+    }
+    56% {
+        background-color: #62a6a2;
+    }
+    60% {
+        transform: rotateY(180deg);
+        opacity: 1;
+        background-color: #62a6a2;
+    }
+    61% {
+        opacity: 0;
+    }
+    100% {
+        z-index: 10;
+        transform: rotateY(180deg);
+        opacity: 0;
+        transform-origin: 100% 50%;
+        background-color: #62a6a2;
+    }
+}
+@keyframes flip-type3 {
+    0% {
+        transform: rotateY(-180deg);
+        opacity: 0;
+        transform-origin: 0 50%;
+        background-color: #7B8D8E;
+    }
+    4% {
+        background-color: #7B8D8E;
+    }
+    5% {
+        background-color: #5D4C46;
+    }
+    10% {
+        transform: rotateY(0);
+        opacity: 1;
+        background-color: #5D4C46;
+        transform-origin: 0 50%;
+    }
+    11% {
+        background-color: #5D4C46;
+        transform-origin: 100% 50%;
+    }
+    49% {
+        background-color: #5D4C46;
+    }
+    50% {
+        transform: rotateY(0);
+        background-color: #62a6a2;
+    }
+    51% {
+        transform-origin: 100% 50%;
+        background-color: #62a6a2;
+    }
+    55% {
+        background-color: #62a6a2;
+    }
+    56% {
+        background-color: #5D4C46;
+    }
+    60% {
+        transform: rotateY(180deg);
+        opacity: 1;
+        background-color: #5D4C46;
+    }
+    61% {
+        opacity: 0;
+    }
+    100% {
+        z-index: 10;
+        transform: rotateY(180deg);
+        opacity: 0;
+        transform-origin: 100% 50%;
+        background-color: #5D4C46;
+    }
+}
+@keyframes flip-type4 {
+    0% {
+        transform: rotateY(-180deg);
+        opacity: 0;
+        transform-origin: 0 50%;
+        background-color: #7B8D8E;
+    }
+    4% {
+        background-color: #7B8D8E;
+    }
+    5% {
+        background-color: #7fa99b;
+    }
+    10% {
+        transform: rotateY(0);
+        opacity: 1;
+        background-color: #7fa99b;
+        transform-origin: 0 50%;
+    }
+    11% {
+        background-color: #7fa99b;
+        transform-origin: 100% 50%;
+    }
+    49% {
+        background-color: #7fa99b;
+    }
+    50% {
+        transform: rotateY(0);
+        background-color: #5D4C46
+    }
+    51% {
+        transform-origin: 100% 50%;
+        background-color: #5D4C46
+    }
+    55% {
+        background-color: #5D4C46
+    }
+    56% {
+        background-color: #7fa99b;
+    }
+    60% {
+        transform: rotateY(180deg);
+        opacity: 1;
+        background-color: #7fa99b;
+    }
+    61% {
+        opacity: 0;
+    }
+    100% {
+        z-index: 10;
+        transform: rotateY(180deg);
+        opacity: 0;
+        transform-origin: 100% 50%;
+        background-color: #62a6a2;
+    }
+}
+@keyframes flip-type5 {
+    0% {
+        transform: rotateY(-180deg);
+        opacity: 0;
+        transform-origin: 0 50%;
+        background-color: #7B8D8E;
+    }
+    4% {
+        background-color: #7B8D8E;
+    }
+    5% {
+        background-color: #7B8D8E;
+    }
+    10% {
+        transform: rotateY(0);
+        opacity: 1;
+        background-color: #7B8D8E;
+        transform-origin: 0 50%;
+    }
+    11% {
+        background-color: #7B8D8E;
+        transform-origin: 100% 50%;
+    }
+    49% {
+        background-color: #7B8D8E;
+    }
+    50% {
+        transform: rotateY(0);
+        background-color: #7fa99b;
+    }
+    51% {
+        transform-origin: 100% 50%;
+        background-color: #7fa99b;
+    }
+    55% {
+        background-color: #7fa99b;
+    }
+    56% {
+        background-color: #7B8D8E;
+    }
+    60% {
+        transform: rotateY(180deg);
+        opacity: 1;
+        background-color: #7B8D8E;
+    }
+    61% {
+        opacity: 0;
+    }
+    100% {
+        z-index: 10;
+        transform: rotateY(180deg);
+        opacity: 0;
+        transform-origin: 100% 50%;
+        background-color: #7B8D8E;
+    }
+}
 
 /*
  * Stage
@@ -15,8 +284,29 @@
     left: 0; top: 0;
     background-color: #EBE5DF;
 }
-
+.flips {
+    position: absolute;
+    width: 90vmin; height: 18vmin;
+    left: calc(50% - 45vmin); top: calc(50% - 9vmin);
+    display: flex;
+    perspective: 500px;
+}
+.flips div {
+    position: relative;
+    width: 25%; height: 100%;
+    opacity: 0;
+}
+.flips div:nth-child(1) { background-color: #c2be65; }
+.flips div:nth-child(2) { background-color: #62a6a2; }
+.flips div:nth-child(3) { background-color: #5D4C46; }
+.flips div:nth-child(4) { background-color: #7fa99b; }
+.flips div:nth-child(5) { background-color: #7B8D8E; }
 
 /*
  * Animations
  */
+.flips div:nth-child(1) { animation: flip-type1 4s linear 0.0s forwards infinite; }
+.flips div:nth-child(2) { animation: flip-type2 4s linear 0.4s forwards infinite; }
+.flips div:nth-child(3) { animation: flip-type3 4s linear 0.8s forwards infinite; }
+.flips div:nth-child(4) { animation: flip-type4 4s linear 1.2s forwards infinite; }
+.flips div:nth-child(5) { animation: flip-type5 4s linear 1.6s forwards infinite; }
