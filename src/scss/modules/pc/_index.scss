@@ -58,15 +58,16 @@
     margin-top: 8vmin;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: left;
     a {
         position: relative;
-        width: 40vmin; height: 29vmin;
+        width: 340px; height: 245px;
         background-color: $theme-brown;
         box-sizing: border-box;
         padding: 15px;
         border-radius: 10px;
-        margin-bottom: 5vmin;
+        margin-right: 20px;
+        margin-bottom: 30px;
         overflow: hidden;
         box-shadow: $theme-brown 0 0 10px;
         text-decoration: none;
