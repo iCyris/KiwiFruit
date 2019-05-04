@@ -7,8 +7,8 @@ window.onload = function() {
 
     preload.addEventListener('animationend', (e) => {
         if (e.animationName === 'fadeout') {
-        preload.remove()
-    }
+            preload.remove()
+        }
     })
 }
 

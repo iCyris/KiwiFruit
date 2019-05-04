@@ -1,16 +1,22 @@
 import React from 'react'
-import content_json from "../config/content";
+import { Route, Link } from 'react-router-dom'
+import content_json from "../config/content"
+import Watch from './Watch'
 
 export default () => {
     const project = content_json.map(el =>
-        <a href={el.link} key={el.id} target="_blank" rel="noopener noreferrer" className="content">
-            <img src={ el.thumb } alt={el.title}/>
-            <h4>{el.title}</h4>
-        </a>
+        <Link to={ `/watch/${ el.id }` } key={ el.id } className="content">
+            <img src={ el.thumb } alt={ el.title }/>
+            <h4>{ el.title }</h4>
+        </Link>
     )
 
     return (
         <div className="main">
+            <div className="preload">
+                <div className="cover" />
+                <div className="icon" />
+            </div>
             <div className="title">
                 <div className="logo" />
                 <div className="description">
@@ -29,6 +35,9 @@ export default () => {
                 <a title="GitHub" href="https://github.com/iCyris/KiwiFruit" target="_blank" rel="noopener noreferrer">
                     <i className="czs-github-logo" />
                 </a>
+            </div>
+            <div className="modal-watch">
+                <Route exact path="/watch/:kiwiName" component={ Watch } />
             </div>
         </div>
     )

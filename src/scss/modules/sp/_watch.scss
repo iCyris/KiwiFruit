@@ -1,0 +1,23 @@
+@media screen and (max-width: 760px) {
+    .w-close a {
+        width: 25vmin; height: 25vmin;
+        right: -4vmin; top: -4vmin;
+    }
+    .w-thumb {
+        margin-top: 16vh;
+    }
+    .w-title {
+        font-size: 1.8rem;
+    }
+    .w-intro {
+        padding: 0 10vw;
+        font-size: .8rem;
+    }
+    .w-see {
+        a {
+            width: 9rem; height: 2.6rem;
+            line-height: 2.6rem;
+            font-size: 1rem;
+        }
+    }
+}

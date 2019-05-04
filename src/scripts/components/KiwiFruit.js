@@ -1,12 +1,13 @@
 import React from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Main from './Main'
-import Preload from './Preload'
 
 export default () => {
     return (
-        <div className="kiwi-fruit">
-            <Preload />
-            <Main />
-        </div>
+        <Router>
+            <div className="kiwi-fruit">
+                <Route path="/" component={ Main } />
+            </div>
+        </Router>
     )
 }
