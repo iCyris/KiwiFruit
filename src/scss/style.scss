@@ -8,6 +8,7 @@
  */
 @import "keyframes/base";
 @import "keyframes/index";
+@import "keyframes/watch";
 
 /*
  * Modules
@@ -15,7 +16,9 @@
 // PC
 @import "modules/pc/base";
 @import "modules/pc/index";
+@import "modules/pc/watch";
 
 // SP
 @import "modules/sp/base";
 @import "modules/sp/index";
+@import "modules/sp/watch";

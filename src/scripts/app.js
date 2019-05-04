@@ -14,6 +14,7 @@ window.onload = function() {
 
 // console
 console.log('> Love kiwi!  -- Cyris')
+console.log('> Inspired from yui540\'s ChocolateCake.')
 
 ReactDOM.render (
     <KiwiFruit />,

@@ -25,7 +25,7 @@
         width: 10vmin; height: 10vmin;
         left: calc(50% - 5vmin); top: calc(50% - 5vmin);
         background-image: url("/images/kiwi.svg");
-        background-size: cover;
+        background-size: 100%;
         background-repeat: no-repeat;
     }
     z-index: 1000;
@@ -127,10 +127,10 @@
 .title, .article, .footer { animation: fadein .5s ease 0s forwards; }
 
 .preload {
-    animation: fadeout .8s ease 1.7s forwards;
+    animation: fadeout .8s ease 1.4s forwards;
     .cover {
         &::before, &::after {
-            animation: scale0-1 .8s ease 1s forwards;
+            animation: scale0-1 .8s ease .8s forwards;
         }
     }
 }
