@@ -1,0 +1,134 @@
+/*
+ * Keyframes
+ */
+@keyframes straps-up__left {
+    0% {
+        transform: rotate(-30deg) translateX(-100%);
+    }
+    100% {
+        transform: rotate(-30deg) translateX(0);
+    }
+}
+@keyframes straps-up__right {
+    0% {
+        transform: rotate(30deg) translateX(100%);
+    }
+    100% {
+        transform: rotate(30deg) translateX(0);
+    }
+}
+@keyframes straps-fall__left {
+    0% {
+        transform: rotate(-30deg) translateX(0) translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(-20deg) translateX(0) translateY(300%);
+        opacity: 0;
+    }
+}
+@keyframes straps-fall__right {
+    0% {
+        transform: rotate(30deg) translateX(0);
+    }
+    100% {
+        transform: rotate(20deg) translateX(0) translateY(300%);
+        opacity: 0;
+    }
+}
+/*
+ * Stage
+ */
+* {
+    margin: 0;
+    padding: 0;
+}
+.stage {
+    position: absolute;
+    width: 100%; height: 100%;
+    left: 0; top: 0;
+    background-color: #F3F2F0;
+}
+.straps {
+    position: absolute;
+    width: inherit; height: inherit;
+    left: 0; top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.groups {
+    position: relative;
+    width: 100%; height: 25%;
+    transform: translateY(200%);
+}
+.strap-left, .strap-right {
+    position: absolute;
+    width: 120%; height: 50%;
+    box-shadow: 0 0 10px #695643;
+}
+.strap-left {
+    transform: rotate(-30deg) translateX(-100%);
+    transform-origin: left bottom;
+}
+.strap-right {
+    transform: rotate(30deg) translateX(100%);
+    transform-origin: right bottom;
+}
+.strap-left:nth-child(1) {
+    left: 0; top: 0;
+    background-color: #f7f4e3;
+}
+.strap-left:nth-child(2) {
+    left: 0; bottom: 0;
+    background-color: #d2e1c8;
+}
+.strap-right:nth-child(3) {
+    right: 0; top: 0;
+    background-color: #fee4a6;
+}
+.strap-right:nth-child(4) {
+    right: 0; bottom: 0;
+    background-color: #f9c4aa;
+}
+
+
+/*
+ * Animations
+ */
+/* group-4 */
+.group-4 .strap-left {
+    animation: straps-up__left .4s ease 0s forwards,
+    straps-fall__left .4s cubic-bezier(.93,.1,.83,.67) 3.2s forwards;
+}
+.group-4 .strap-right {
+    animation: straps-up__right .4s ease .2s forwards,
+    straps-fall__right .4s cubic-bezier(.93,.1,.83,.67) 3s forwards;
+}
+/* group-3 */
+.group-3 .strap-left {
+    animation: straps-up__left .4s ease .4s forwards,
+    straps-fall__left .4s cubic-bezier(.93,.1,.83,.67) 2.8s forwards;
+}
+.group-3 .strap-right {
+    animation: straps-up__right .4s ease .6s forwards,
+    straps-fall__right .4s cubic-bezier(.93,.1,.83,.67) 2.6s forwards;
+}
+/* group-2 */
+.group-2 .strap-left {
+    animation: straps-up__left .4s ease .8s forwards,
+    straps-fall__left .4s cubic-bezier(.93,.1,.83,.67) 2.4s forwards;
+}
+.group-2 .strap-right {
+    animation: straps-up__right .4s ease 1s forwards,
+    straps-fall__right .4s cubic-bezier(.93,.1,.83,.67) 2.2s forwards;
+}
+/* group-1 */
+.group-1 .strap-left {
+    animation: straps-up__left .4s ease 1.2s forwards,
+    straps-fall__left .4s cubic-bezier(.93,.1,.83,.67) 2s forwards;
+}
+.group-1 .strap-right {
+    animation: straps-up__right .4s ease 1.4s forwards,
+    straps-fall__right .4s cubic-bezier(.93,.1,.83,.67) 1.8s forwards;
+}
