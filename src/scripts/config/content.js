@@ -1,6 +1,6 @@
 export default [
     {
-        "id": "magical loading",
+        "id": "magical-loading",
         "title": "magical loading",
         "intro": "Dududu~ The page is loading...",
         "thumb": "/images/thumb/magical-loading.png",
