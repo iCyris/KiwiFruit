@@ -1,5 +1,12 @@
 export default [
     {
+        "id": "magical loading",
+        "title": "magical loading",
+        "intro": "Dududu~ The page is loading...",
+        "thumb": "/images/thumb/magical-loading.png",
+        "link": "/content/magical-loading",
+    },
+    {
         "id": "cross",
         "title": "cross",
         "intro": "Cross Straps.",
