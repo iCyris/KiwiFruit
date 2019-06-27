@@ -119,13 +119,13 @@
 /*
  * Animations
  */
-.title, .article, .footer { animation: fadein .5s ease 0s forwards; }
+.title, .article, .footer { animation: fadein .5s ease 1.4s forwards; }
 
 .preload {
-    animation: fadeout .8s ease 1.4s forwards;
+    animation: fadeout .5s ease 1.4s forwards;
     .cover {
         &::before, &::after {
-            animation: scale0-1 .8s ease .8s forwards;
+            animation: scale0-1 .7s ease .7s forwards;
         }
     }
 }
