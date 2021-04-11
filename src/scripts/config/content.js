@@ -5,13 +5,6 @@ export default [
         "intro": "Dududu~ The page is loading...",
         "thumb": "/images/thumb/magical-loading.png",
         "link": "/content/magical-loading",
-    },
-    {
-        "id": "cross",
-        "title": "cross",
-        "intro": "Cross Straps.",
-        "thumb": "/images/thumb/cross.png",
-        "link": "/content/cross",
     }, {
         "id": "flip",
         "title": "flip",
