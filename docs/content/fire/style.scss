@@ -1,0 +1,63 @@
+/*
+ * Keyframes
+ */
+@keyframes movetop {
+  0% {
+    transform: translate(0, 0);
+    transform-origin: center;
+    opacity: 1;
+  } 100% {
+    transform: translate(0, -30vmin);
+    transform-origin: center;
+    opacity: 0;
+  }
+}
+
+/*
+ * Stage
+ */
+ * {
+  margin: 0;
+  padding: 0;
+}
+.stage {
+  position: absolute;
+  width: 100%; height: 100%;
+  left: 0; top: 0;
+  background-color: #ff7a00;
+  background-color: #3d3a3a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fire-wrap {
+  width: 30vmin;
+  height: 30vmin;
+  position: relative;
+  // background-color: #ffefcf;
+  border-radius: 50%;
+  filter: blur(2px) contrast(10);
+  // overflow: hidden;
+  transform: scaleX(0.8);
+  // clip-path: polygon(0 100%, 50% 0, 100% 100%);
+}
+
+.fire {
+  background-color: #ffefcf;
+  bottom: 0vmin;
+  border-radius: 50%;
+}
+
+$count: 200;
+@for $i from 0 to $count {
+  .fire:nth-child(#{$i}) {
+      $width: #{random(3)}vmin;
+      position: absolute;
+      width: $width;
+      height: $width;
+      
+      left: calc(#{(random(40))}px);
+      animation: movetop .6s linear #{random(2000)/1000}s infinite;
+  }
+}

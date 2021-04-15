@@ -17,5 +17,12 @@ export default [
         "intro": "Say hello to the world!",
         "thumb": "/images/thumb/hello.png",
         "link": "/content/hello",
-    }
+    } 
+    // {
+    //     "id": "fire",
+    //     "title": "fire",
+    //     "intro": "A thing which can make you warm.",
+    //     "thumb": "/images/thumb/hello.png",
+    //     "link": "/content/fire",
+    // }
 ]

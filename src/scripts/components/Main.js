@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Route, Link } from 'react-router-dom'
 import content_json from "../config/content"
 import Watch from './Watch'
 
 export default () => {
+    const [showPreload, setShowPreload] = useState(true);
     const project = content_json.map(el =>
         <Link to={ `/watch/${ el.id }` } key={ el.id } className="content">
             <img src={ el.thumb } alt={ el.title }/>
@@ -13,7 +14,14 @@ export default () => {
 
     return (
         <div className="main">
-            <div className="preload">
+            <div 
+                className="preload" 
+                style={{display: showPreload ? undefined : 'none'}} 
+                onAnimationEnd={(el) => {
+                    if (el?.target?.className === 'preload') {
+                        setShowPreload(false);
+                    }
+                }}>
                 <div className="cover" />
                 <div className="icon" />
             </div>
