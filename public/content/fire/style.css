@@ -3,14 +3,12 @@
  */
 @keyframes bubble {
   0% {
-    transform: translate(0, 0);
+    transform: translate(0, 0) scale(1);
     transform-origin: center;
-    opacity: 1;
   }
   100% {
-    transform: translate(0, -52vmin);
+    transform: translate(0, -20vmin) scale(0);
     transform-origin: center;
-    opacity: 0;
   }
 }
 /*
@@ -28,1631 +26,1634 @@
   left: 0;
   top: 0;
   background-color: #ffefcf;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
+  filter: contrast(20px);
 }
 
 .fire-wrap {
-  width: 50vmin;
-  height: 50vmin;
-  position: relative;
+  width: 100%;
+  height: 25vmin;
+  position: absolute;
   display: block;
-  overflow: hidden;
+  background-color: #E4AB6C;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .fire {
-  bottom: -7vmin;
+  top: 0vmin;
   background-color: #E4AB6C;
   border-radius: 50%;
+  transform: scale(0);
 }
 
 .fire:nth-child(0) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(11vmin);
-  animation: bubble 0.6s linear 0.142s infinite;
+  width: 19vmin;
+  height: 19vmin;
+  left: calc(23vw - 10vw);
+  animation: bubble 2s ease-in 2.538s infinite;
 }
 
 .fire:nth-child(1) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(7vmin);
-  animation: bubble 0.6s linear 0.034s infinite;
+  width: 42vmin;
+  height: 42vmin;
+  left: calc(8vw - 10vw);
+  animation: bubble 2s ease-in 1.774s infinite;
 }
 
 .fire:nth-child(2) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(12vmin);
-  animation: bubble 0.6s linear 1.4s infinite;
+  width: 32vmin;
+  height: 32vmin;
+  left: calc(69vw - 10vw);
+  animation: bubble 2s ease-in 0.202s infinite;
 }
 
 .fire:nth-child(3) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(38vmin);
-  animation: bubble 0.6s linear 1.42s infinite;
+  width: 2vmin;
+  height: 2vmin;
+  left: calc(94vw - 10vw);
+  animation: bubble 2s ease-in 0.508s infinite;
 }
 
 .fire:nth-child(4) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(30vmin);
-  animation: bubble 0.6s linear 0.23s infinite;
+  width: 30vmin;
+  height: 30vmin;
+  left: calc(35vw - 10vw);
+  animation: bubble 2s ease-in 3.686s infinite;
 }
 
 .fire:nth-child(5) {
   position: absolute;
   width: 1vmin;
   height: 1vmin;
-  left: calc(26vmin);
-  animation: bubble 0.6s linear 1.133s infinite;
+  left: calc(21vw - 10vw);
+  animation: bubble 2s ease-in 2.324s infinite;
 }
 
 .fire:nth-child(6) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(31vmin);
-  animation: bubble 0.6s linear 0.775s infinite;
+  width: 37vmin;
+  height: 37vmin;
+  left: calc(73vw - 10vw);
+  animation: bubble 2s ease-in 0.914s infinite;
 }
 
 .fire:nth-child(7) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(21vmin);
-  animation: bubble 0.6s linear 1.675s infinite;
+  width: 46vmin;
+  height: 46vmin;
+  left: calc(18vw - 10vw);
+  animation: bubble 2s ease-in 0.062s infinite;
 }
 
 .fire:nth-child(8) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(36vmin);
-  animation: bubble 0.6s linear 0.267s infinite;
+  width: 11vmin;
+  height: 11vmin;
+  left: calc(99vw - 10vw);
+  animation: bubble 2s ease-in 3.456s infinite;
 }
 
 .fire:nth-child(9) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(37vmin);
-  animation: bubble 0.6s linear 0.831s infinite;
+  width: 27vmin;
+  height: 27vmin;
+  left: calc(64vw - 10vw);
+  animation: bubble 2s ease-in 2.698s infinite;
 }
 
 .fire:nth-child(10) {
   position: absolute;
   width: 4vmin;
   height: 4vmin;
-  left: calc(23vmin);
-  animation: bubble 0.6s linear 1.806s infinite;
+  left: calc(63vw - 10vw);
+  animation: bubble 2s ease-in 1.786s infinite;
 }
 
 .fire:nth-child(11) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(2vmin);
-  animation: bubble 0.6s linear 0.828s infinite;
+  width: 6vmin;
+  height: 6vmin;
+  left: calc(85vw - 10vw);
+  animation: bubble 2s ease-in 0.852s infinite;
 }
 
 .fire:nth-child(12) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(16vmin);
-  animation: bubble 0.6s linear 0.92s infinite;
+  width: 46vmin;
+  height: 46vmin;
+  left: calc(23vw - 10vw);
+  animation: bubble 2s ease-in 1.596s infinite;
 }
 
 .fire:nth-child(13) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(23vmin);
-  animation: bubble 0.6s linear 0.49s infinite;
+  width: 45vmin;
+  height: 45vmin;
+  left: calc(50vw - 10vw);
+  animation: bubble 2s ease-in 3.938s infinite;
 }
 
 .fire:nth-child(14) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(24vmin);
-  animation: bubble 0.6s linear 0.389s infinite;
+  width: 30vmin;
+  height: 30vmin;
+  left: calc(83vw - 10vw);
+  animation: bubble 2s ease-in 2.328s infinite;
 }
 
 .fire:nth-child(15) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(23vmin);
-  animation: bubble 0.6s linear 0.656s infinite;
+  width: 40vmin;
+  height: 40vmin;
+  left: calc(65vw - 10vw);
+  animation: bubble 2s ease-in 0.672s infinite;
 }
 
 .fire:nth-child(16) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(39vmin);
-  animation: bubble 0.6s linear 1.05s infinite;
+  width: 12vmin;
+  height: 12vmin;
+  left: calc(80vw - 10vw);
+  animation: bubble 2s ease-in 1.866s infinite;
 }
 
 .fire:nth-child(17) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(8vmin);
-  animation: bubble 0.6s linear 0.404s infinite;
+  width: 17vmin;
+  height: 17vmin;
+  left: calc(51vw - 10vw);
+  animation: bubble 2s ease-in 0.816s infinite;
 }
 
 .fire:nth-child(18) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(15vmin);
-  animation: bubble 0.6s linear 1.817s infinite;
+  width: 50vmin;
+  height: 50vmin;
+  left: calc(98vw - 10vw);
+  animation: bubble 2s ease-in 1.584s infinite;
 }
 
 .fire:nth-child(19) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(20vmin);
-  animation: bubble 0.6s linear 0.333s infinite;
+  width: 9vmin;
+  height: 9vmin;
+  left: calc(98vw - 10vw);
+  animation: bubble 2s ease-in 1.71s infinite;
 }
 
 .fire:nth-child(20) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(39vmin);
-  animation: bubble 0.6s linear 0.463s infinite;
+  width: 15vmin;
+  height: 15vmin;
+  left: calc(22vw - 10vw);
+  animation: bubble 2s ease-in 3.322s infinite;
 }
 
 .fire:nth-child(21) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(33vmin);
-  animation: bubble 0.6s linear 0.013s infinite;
+  width: 45vmin;
+  height: 45vmin;
+  left: calc(27vw - 10vw);
+  animation: bubble 2s ease-in 1.586s infinite;
 }
 
 .fire:nth-child(22) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(17vmin);
-  animation: bubble 0.6s linear 1.407s infinite;
+  width: 37vmin;
+  height: 37vmin;
+  left: calc(100vw - 10vw);
+  animation: bubble 2s ease-in 2.884s infinite;
 }
 
 .fire:nth-child(23) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(29vmin);
-  animation: bubble 0.6s linear 0.875s infinite;
+  width: 20vmin;
+  height: 20vmin;
+  left: calc(53vw - 10vw);
+  animation: bubble 2s ease-in 3.946s infinite;
 }
 
 .fire:nth-child(24) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(11vmin);
-  animation: bubble 0.6s linear 1.689s infinite;
+  width: 35vmin;
+  height: 35vmin;
+  left: calc(25vw - 10vw);
+  animation: bubble 2s ease-in 2.552s infinite;
 }
 
 .fire:nth-child(25) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(29vmin);
-  animation: bubble 0.6s linear 0.845s infinite;
+  width: 21vmin;
+  height: 21vmin;
+  left: calc(40vw - 10vw);
+  animation: bubble 2s ease-in 0.962s infinite;
 }
 
 .fire:nth-child(26) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(28vmin);
-  animation: bubble 0.6s linear 1.613s infinite;
+  width: 22vmin;
+  height: 22vmin;
+  left: calc(23vw - 10vw);
+  animation: bubble 2s ease-in 2.468s infinite;
 }
 
 .fire:nth-child(27) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(36vmin);
-  animation: bubble 0.6s linear 0.63s infinite;
+  width: 29vmin;
+  height: 29vmin;
+  left: calc(4vw - 10vw);
+  animation: bubble 2s ease-in 0.19s infinite;
 }
 
 .fire:nth-child(28) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(35vmin);
-  animation: bubble 0.6s linear 0.002s infinite;
+  width: 12vmin;
+  height: 12vmin;
+  left: calc(39vw - 10vw);
+  animation: bubble 2s ease-in 1.616s infinite;
 }
 
 .fire:nth-child(29) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(30vmin);
-  animation: bubble 0.6s linear 0.402s infinite;
+  width: 30vmin;
+  height: 30vmin;
+  left: calc(90vw - 10vw);
+  animation: bubble 2s ease-in 0.254s infinite;
 }
 
 .fire:nth-child(30) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(24vmin);
-  animation: bubble 0.6s linear 1.086s infinite;
+  width: 33vmin;
+  height: 33vmin;
+  left: calc(37vw - 10vw);
+  animation: bubble 2s ease-in 1.278s infinite;
 }
 
 .fire:nth-child(31) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(12vmin);
-  animation: bubble 0.6s linear 0.057s infinite;
+  width: 12vmin;
+  height: 12vmin;
+  left: calc(43vw - 10vw);
+  animation: bubble 2s ease-in 1.69s infinite;
 }
 
 .fire:nth-child(32) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(12vmin);
-  animation: bubble 0.6s linear 1.668s infinite;
+  width: 24vmin;
+  height: 24vmin;
+  left: calc(90vw - 10vw);
+  animation: bubble 2s ease-in 1.106s infinite;
 }
 
 .fire:nth-child(33) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(38vmin);
-  animation: bubble 0.6s linear 1.829s infinite;
+  width: 15vmin;
+  height: 15vmin;
+  left: calc(43vw - 10vw);
+  animation: bubble 2s ease-in 2.58s infinite;
 }
 
 .fire:nth-child(34) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(3vmin);
-  animation: bubble 0.6s linear 0.858s infinite;
+  width: 12vmin;
+  height: 12vmin;
+  left: calc(67vw - 10vw);
+  animation: bubble 2s ease-in 2.61s infinite;
 }
 
 .fire:nth-child(35) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(10vmin);
-  animation: bubble 0.6s linear 0.658s infinite;
+  width: 46vmin;
+  height: 46vmin;
+  left: calc(98vw - 10vw);
+  animation: bubble 2s ease-in 0.618s infinite;
 }
 
 .fire:nth-child(36) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(2vmin);
-  animation: bubble 0.6s linear 1.526s infinite;
+  width: 40vmin;
+  height: 40vmin;
+  left: calc(65vw - 10vw);
+  animation: bubble 2s ease-in 3.186s infinite;
 }
 
 .fire:nth-child(37) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(5vmin);
-  animation: bubble 0.6s linear 0.84s infinite;
+  width: 35vmin;
+  height: 35vmin;
+  left: calc(81vw - 10vw);
+  animation: bubble 2s ease-in 1.142s infinite;
 }
 
 .fire:nth-child(38) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(12vmin);
-  animation: bubble 0.6s linear 1.383s infinite;
+  width: 22vmin;
+  height: 22vmin;
+  left: calc(74vw - 10vw);
+  animation: bubble 2s ease-in 0.778s infinite;
 }
 
 .fire:nth-child(39) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(11vmin);
-  animation: bubble 0.6s linear 1.74s infinite;
+  width: 3vmin;
+  height: 3vmin;
+  left: calc(64vw - 10vw);
+  animation: bubble 2s ease-in 0.124s infinite;
 }
 
 .fire:nth-child(40) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(11vmin);
-  animation: bubble 0.6s linear 0.203s infinite;
+  width: 40vmin;
+  height: 40vmin;
+  left: calc(14vw - 10vw);
+  animation: bubble 2s ease-in 0.724s infinite;
 }
 
 .fire:nth-child(41) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(39vmin);
-  animation: bubble 0.6s linear 1.015s infinite;
+  width: 20vmin;
+  height: 20vmin;
+  left: calc(48vw - 10vw);
+  animation: bubble 2s ease-in 1.128s infinite;
 }
 
 .fire:nth-child(42) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(2vmin);
-  animation: bubble 0.6s linear 0.62s infinite;
+  width: 14vmin;
+  height: 14vmin;
+  left: calc(11vw - 10vw);
+  animation: bubble 2s ease-in 0.438s infinite;
 }
 
 .fire:nth-child(43) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(2vmin);
-  animation: bubble 0.6s linear 0.904s infinite;
+  width: 17vmin;
+  height: 17vmin;
+  left: calc(63vw - 10vw);
+  animation: bubble 2s ease-in 1.514s infinite;
 }
 
 .fire:nth-child(44) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(8vmin);
-  animation: bubble 0.6s linear 0.341s infinite;
+  width: 32vmin;
+  height: 32vmin;
+  left: calc(78vw - 10vw);
+  animation: bubble 2s ease-in 3.966s infinite;
 }
 
 .fire:nth-child(45) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(22vmin);
-  animation: bubble 0.6s linear 0.779s infinite;
+  width: 16vmin;
+  height: 16vmin;
+  left: calc(82vw - 10vw);
+  animation: bubble 2s ease-in 1.022s infinite;
 }
 
 .fire:nth-child(46) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(34vmin);
-  animation: bubble 0.6s linear 0.465s infinite;
+  width: 24vmin;
+  height: 24vmin;
+  left: calc(27vw - 10vw);
+  animation: bubble 2s ease-in 2.214s infinite;
 }
 
 .fire:nth-child(47) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(13vmin);
-  animation: bubble 0.6s linear 1.887s infinite;
+  width: 3vmin;
+  height: 3vmin;
+  left: calc(49vw - 10vw);
+  animation: bubble 2s ease-in 2.8s infinite;
 }
 
 .fire:nth-child(48) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(19vmin);
-  animation: bubble 0.6s linear 1.385s infinite;
+  width: 24vmin;
+  height: 24vmin;
+  left: calc(92vw - 10vw);
+  animation: bubble 2s ease-in 1.574s infinite;
 }
 
 .fire:nth-child(49) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(27vmin);
-  animation: bubble 0.6s linear 1.748s infinite;
+  width: 26vmin;
+  height: 26vmin;
+  left: calc(47vw - 10vw);
+  animation: bubble 2s ease-in 0.532s infinite;
 }
 
 .fire:nth-child(50) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(17vmin);
-  animation: bubble 0.6s linear 0.938s infinite;
+  width: 42vmin;
+  height: 42vmin;
+  left: calc(89vw - 10vw);
+  animation: bubble 2s ease-in 0.976s infinite;
 }
 
 .fire:nth-child(51) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(40vmin);
-  animation: bubble 0.6s linear 1.142s infinite;
+  width: 20vmin;
+  height: 20vmin;
+  left: calc(83vw - 10vw);
+  animation: bubble 2s ease-in 3.104s infinite;
 }
 
 .fire:nth-child(52) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(13vmin);
-  animation: bubble 0.6s linear 1.931s infinite;
+  width: 18vmin;
+  height: 18vmin;
+  left: calc(35vw - 10vw);
+  animation: bubble 2s ease-in 2.76s infinite;
 }
 
 .fire:nth-child(53) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(21vmin);
-  animation: bubble 0.6s linear 0.924s infinite;
+  width: 8vmin;
+  height: 8vmin;
+  left: calc(70vw - 10vw);
+  animation: bubble 2s ease-in 2.504s infinite;
 }
 
 .fire:nth-child(54) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(9vmin);
-  animation: bubble 0.6s linear 1.15s infinite;
+  width: 30vmin;
+  height: 30vmin;
+  left: calc(46vw - 10vw);
+  animation: bubble 2s ease-in 2.442s infinite;
 }
 
 .fire:nth-child(55) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(19vmin);
-  animation: bubble 0.6s linear 0.027s infinite;
+  width: 14vmin;
+  height: 14vmin;
+  left: calc(5vw - 10vw);
+  animation: bubble 2s ease-in 1.522s infinite;
 }
 
 .fire:nth-child(56) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(31vmin);
-  animation: bubble 0.6s linear 1.528s infinite;
+  width: 18vmin;
+  height: 18vmin;
+  left: calc(48vw - 10vw);
+  animation: bubble 2s ease-in 0.018s infinite;
 }
 
 .fire:nth-child(57) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(39vmin);
-  animation: bubble 0.6s linear 0.141s infinite;
+  width: 24vmin;
+  height: 24vmin;
+  left: calc(36vw - 10vw);
+  animation: bubble 2s ease-in 3.702s infinite;
 }
 
 .fire:nth-child(58) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(15vmin);
-  animation: bubble 0.6s linear 1.891s infinite;
+  width: 12vmin;
+  height: 12vmin;
+  left: calc(85vw - 10vw);
+  animation: bubble 2s ease-in 0.198s infinite;
 }
 
 .fire:nth-child(59) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(6vmin);
-  animation: bubble 0.6s linear 0.635s infinite;
+  width: 21vmin;
+  height: 21vmin;
+  left: calc(72vw - 10vw);
+  animation: bubble 2s ease-in 2.158s infinite;
 }
 
 .fire:nth-child(60) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(18vmin);
-  animation: bubble 0.6s linear 1.926s infinite;
+  width: 26vmin;
+  height: 26vmin;
+  left: calc(66vw - 10vw);
+  animation: bubble 2s ease-in 3.052s infinite;
 }
 
 .fire:nth-child(61) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(31vmin);
-  animation: bubble 0.6s linear 0.924s infinite;
+  width: 42vmin;
+  height: 42vmin;
+  left: calc(87vw - 10vw);
+  animation: bubble 2s ease-in 0.014s infinite;
 }
 
 .fire:nth-child(62) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(11vmin);
-  animation: bubble 0.6s linear 0.394s infinite;
+  width: 5vmin;
+  height: 5vmin;
+  left: calc(28vw - 10vw);
+  animation: bubble 2s ease-in 1.572s infinite;
 }
 
 .fire:nth-child(63) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(2vmin);
-  animation: bubble 0.6s linear 1.869s infinite;
+  width: 9vmin;
+  height: 9vmin;
+  left: calc(25vw - 10vw);
+  animation: bubble 2s ease-in 3.738s infinite;
 }
 
 .fire:nth-child(64) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(8vmin);
-  animation: bubble 0.6s linear 1.912s infinite;
+  width: 15vmin;
+  height: 15vmin;
+  left: calc(35vw - 10vw);
+  animation: bubble 2s ease-in 0.41s infinite;
 }
 
 .fire:nth-child(65) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(16vmin);
-  animation: bubble 0.6s linear 1.299s infinite;
+  width: 37vmin;
+  height: 37vmin;
+  left: calc(16vw - 10vw);
+  animation: bubble 2s ease-in 2.008s infinite;
 }
 
 .fire:nth-child(66) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(11vmin);
-  animation: bubble 0.6s linear 1.662s infinite;
+  width: 27vmin;
+  height: 27vmin;
+  left: calc(14vw - 10vw);
+  animation: bubble 2s ease-in 2.846s infinite;
 }
 
 .fire:nth-child(67) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(36vmin);
-  animation: bubble 0.6s linear 1.147s infinite;
+  width: 38vmin;
+  height: 38vmin;
+  left: calc(88vw - 10vw);
+  animation: bubble 2s ease-in 2.27s infinite;
 }
 
 .fire:nth-child(68) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(40vmin);
-  animation: bubble 0.6s linear 0.218s infinite;
+  width: 33vmin;
+  height: 33vmin;
+  left: calc(96vw - 10vw);
+  animation: bubble 2s ease-in 3.794s infinite;
 }
 
 .fire:nth-child(69) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(22vmin);
-  animation: bubble 0.6s linear 0.87s infinite;
+  width: 36vmin;
+  height: 36vmin;
+  left: calc(76vw - 10vw);
+  animation: bubble 2s ease-in 1.55s infinite;
 }
 
 .fire:nth-child(70) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(1vmin);
-  animation: bubble 0.6s linear 0.677s infinite;
+  width: 15vmin;
+  height: 15vmin;
+  left: calc(82vw - 10vw);
+  animation: bubble 2s ease-in 2.886s infinite;
 }
 
 .fire:nth-child(71) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(35vmin);
-  animation: bubble 0.6s linear 1.356s infinite;
+  width: 22vmin;
+  height: 22vmin;
+  left: calc(39vw - 10vw);
+  animation: bubble 2s ease-in 0.482s infinite;
 }
 
 .fire:nth-child(72) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(16vmin);
-  animation: bubble 0.6s linear 0.391s infinite;
+  width: 31vmin;
+  height: 31vmin;
+  left: calc(30vw - 10vw);
+  animation: bubble 2s ease-in 3.168s infinite;
 }
 
 .fire:nth-child(73) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(17vmin);
-  animation: bubble 0.6s linear 1.459s infinite;
+  width: 6vmin;
+  height: 6vmin;
+  left: calc(34vw - 10vw);
+  animation: bubble 2s ease-in 1.63s infinite;
 }
 
 .fire:nth-child(74) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(2vmin);
-  animation: bubble 0.6s linear 1.538s infinite;
+  width: 35vmin;
+  height: 35vmin;
+  left: calc(18vw - 10vw);
+  animation: bubble 2s ease-in 1.136s infinite;
 }
 
 .fire:nth-child(75) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(5vmin);
-  animation: bubble 0.6s linear 0.123s infinite;
+  width: 13vmin;
+  height: 13vmin;
+  left: calc(14vw - 10vw);
+  animation: bubble 2s ease-in 1.25s infinite;
 }
 
 .fire:nth-child(76) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(29vmin);
-  animation: bubble 0.6s linear 1.084s infinite;
+  width: 18vmin;
+  height: 18vmin;
+  left: calc(20vw - 10vw);
+  animation: bubble 2s ease-in 1.026s infinite;
 }
 
 .fire:nth-child(77) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(31vmin);
-  animation: bubble 0.6s linear 0.228s infinite;
+  width: 21vmin;
+  height: 21vmin;
+  left: calc(64vw - 10vw);
+  animation: bubble 2s ease-in 0.27s infinite;
 }
 
 .fire:nth-child(78) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(25vmin);
-  animation: bubble 0.6s linear 0.642s infinite;
+  width: 41vmin;
+  height: 41vmin;
+  left: calc(37vw - 10vw);
+  animation: bubble 2s ease-in 2.834s infinite;
 }
 
 .fire:nth-child(79) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(33vmin);
-  animation: bubble 0.6s linear 1.044s infinite;
+  width: 32vmin;
+  height: 32vmin;
+  left: calc(42vw - 10vw);
+  animation: bubble 2s ease-in 2.704s infinite;
 }
 
 .fire:nth-child(80) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(26vmin);
-  animation: bubble 0.6s linear 0.858s infinite;
+  width: 39vmin;
+  height: 39vmin;
+  left: calc(5vw - 10vw);
+  animation: bubble 2s ease-in 0.182s infinite;
 }
 
 .fire:nth-child(81) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(6vmin);
-  animation: bubble 0.6s linear 1.827s infinite;
+  width: 18vmin;
+  height: 18vmin;
+  left: calc(1vw - 10vw);
+  animation: bubble 2s ease-in 3.566s infinite;
 }
 
 .fire:nth-child(82) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(33vmin);
-  animation: bubble 0.6s linear 1.952s infinite;
+  width: 48vmin;
+  height: 48vmin;
+  left: calc(74vw - 10vw);
+  animation: bubble 2s ease-in 0.382s infinite;
 }
 
 .fire:nth-child(83) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(6vmin);
-  animation: bubble 0.6s linear 0.929s infinite;
+  width: 41vmin;
+  height: 41vmin;
+  left: calc(73vw - 10vw);
+  animation: bubble 2s ease-in 1.202s infinite;
 }
 
 .fire:nth-child(84) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(16vmin);
-  animation: bubble 0.6s linear 1.075s infinite;
+  width: 18vmin;
+  height: 18vmin;
+  left: calc(81vw - 10vw);
+  animation: bubble 2s ease-in 2.92s infinite;
 }
 
 .fire:nth-child(85) {
   position: absolute;
   width: 2vmin;
   height: 2vmin;
-  left: calc(1vmin);
-  animation: bubble 0.6s linear 0.441s infinite;
+  left: calc(79vw - 10vw);
+  animation: bubble 2s ease-in 3.794s infinite;
 }
 
 .fire:nth-child(86) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(31vmin);
-  animation: bubble 0.6s linear 1.52s infinite;
+  width: 14vmin;
+  height: 14vmin;
+  left: calc(9vw - 10vw);
+  animation: bubble 2s ease-in 0.464s infinite;
 }
 
 .fire:nth-child(87) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(19vmin);
-  animation: bubble 0.6s linear 0.071s infinite;
+  width: 17vmin;
+  height: 17vmin;
+  left: calc(67vw - 10vw);
+  animation: bubble 2s ease-in 2.752s infinite;
 }
 
 .fire:nth-child(88) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(15vmin);
-  animation: bubble 0.6s linear 1.318s infinite;
+  width: 26vmin;
+  height: 26vmin;
+  left: calc(77vw - 10vw);
+  animation: bubble 2s ease-in 0.532s infinite;
 }
 
 .fire:nth-child(89) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(24vmin);
-  animation: bubble 0.6s linear 1.37s infinite;
+  width: 27vmin;
+  height: 27vmin;
+  left: calc(56vw - 10vw);
+  animation: bubble 2s ease-in 3.344s infinite;
 }
 
 .fire:nth-child(90) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(40vmin);
-  animation: bubble 0.6s linear 0.847s infinite;
+  width: 46vmin;
+  height: 46vmin;
+  left: calc(58vw - 10vw);
+  animation: bubble 2s ease-in 1.53s infinite;
 }
 
 .fire:nth-child(91) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(31vmin);
-  animation: bubble 0.6s linear 1.169s infinite;
+  width: 36vmin;
+  height: 36vmin;
+  left: calc(39vw - 10vw);
+  animation: bubble 2s ease-in 2.624s infinite;
 }
 
 .fire:nth-child(92) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(23vmin);
-  animation: bubble 0.6s linear 1.82s infinite;
+  width: 5vmin;
+  height: 5vmin;
+  left: calc(5vw - 10vw);
+  animation: bubble 2s ease-in 3.576s infinite;
 }
 
 .fire:nth-child(93) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(30vmin);
-  animation: bubble 0.6s linear 1.273s infinite;
+  width: 48vmin;
+  height: 48vmin;
+  left: calc(44vw - 10vw);
+  animation: bubble 2s ease-in 1.554s infinite;
 }
 
 .fire:nth-child(94) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(36vmin);
-  animation: bubble 0.6s linear 1.37s infinite;
+  width: 49vmin;
+  height: 49vmin;
+  left: calc(45vw - 10vw);
+  animation: bubble 2s ease-in 3.026s infinite;
 }
 
 .fire:nth-child(95) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(2vmin);
-  animation: bubble 0.6s linear 0.163s infinite;
+  width: 8vmin;
+  height: 8vmin;
+  left: calc(67vw - 10vw);
+  animation: bubble 2s ease-in 1.454s infinite;
 }
 
 .fire:nth-child(96) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(17vmin);
-  animation: bubble 0.6s linear 0.167s infinite;
+  width: 28vmin;
+  height: 28vmin;
+  left: calc(49vw - 10vw);
+  animation: bubble 2s ease-in 0.252s infinite;
 }
 
 .fire:nth-child(97) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(31vmin);
-  animation: bubble 0.6s linear 0.502s infinite;
+  width: 44vmin;
+  height: 44vmin;
+  left: calc(56vw - 10vw);
+  animation: bubble 2s ease-in 2.918s infinite;
 }
 
 .fire:nth-child(98) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(30vmin);
-  animation: bubble 0.6s linear 0.883s infinite;
+  width: 44vmin;
+  height: 44vmin;
+  left: calc(26vw - 10vw);
+  animation: bubble 2s ease-in 1.998s infinite;
 }
 
 .fire:nth-child(99) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(31vmin);
-  animation: bubble 0.6s linear 1.233s infinite;
+  width: 14vmin;
+  height: 14vmin;
+  left: calc(79vw - 10vw);
+  animation: bubble 2s ease-in 1.612s infinite;
 }
 
 .fire:nth-child(100) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(40vmin);
-  animation: bubble 0.6s linear 1.293s infinite;
+  width: 6vmin;
+  height: 6vmin;
+  left: calc(15vw - 10vw);
+  animation: bubble 2s ease-in 1.958s infinite;
 }
 
 .fire:nth-child(101) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(6vmin);
-  animation: bubble 0.6s linear 0.456s infinite;
+  width: 11vmin;
+  height: 11vmin;
+  left: calc(27vw - 10vw);
+  animation: bubble 2s ease-in 0.694s infinite;
 }
 
 .fire:nth-child(102) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(22vmin);
-  animation: bubble 0.6s linear 0.057s infinite;
+  width: 41vmin;
+  height: 41vmin;
+  left: calc(28vw - 10vw);
+  animation: bubble 2s ease-in 1.466s infinite;
 }
 
 .fire:nth-child(103) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(34vmin);
-  animation: bubble 0.6s linear 1.855s infinite;
+  width: 30vmin;
+  height: 30vmin;
+  left: calc(94vw - 10vw);
+  animation: bubble 2s ease-in 1.39s infinite;
 }
 
 .fire:nth-child(104) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(6vmin);
-  animation: bubble 0.6s linear 1.864s infinite;
+  width: 40vmin;
+  height: 40vmin;
+  left: calc(49vw - 10vw);
+  animation: bubble 2s ease-in 3.856s infinite;
 }
 
 .fire:nth-child(105) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(14vmin);
-  animation: bubble 0.6s linear 1.121s infinite;
+  width: 2vmin;
+  height: 2vmin;
+  left: calc(28vw - 10vw);
+  animation: bubble 2s ease-in 0.024s infinite;
 }
 
 .fire:nth-child(106) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(37vmin);
-  animation: bubble 0.6s linear 1.85s infinite;
+  width: 17vmin;
+  height: 17vmin;
+  left: calc(13vw - 10vw);
+  animation: bubble 2s ease-in 1.2s infinite;
 }
 
 .fire:nth-child(107) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(4vmin);
-  animation: bubble 0.6s linear 1.402s infinite;
+  width: 32vmin;
+  height: 32vmin;
+  left: calc(10vw - 10vw);
+  animation: bubble 2s ease-in 1.722s infinite;
 }
 
 .fire:nth-child(108) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(4vmin);
-  animation: bubble 0.6s linear 0.157s infinite;
+  width: 14vmin;
+  height: 14vmin;
+  left: calc(91vw - 10vw);
+  animation: bubble 2s ease-in 1.364s infinite;
 }
 
 .fire:nth-child(109) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(23vmin);
-  animation: bubble 0.6s linear 1.637s infinite;
+  width: 37vmin;
+  height: 37vmin;
+  left: calc(56vw - 10vw);
+  animation: bubble 2s ease-in 2.03s infinite;
 }
 
 .fire:nth-child(110) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(39vmin);
-  animation: bubble 0.6s linear 0.144s infinite;
+  width: 43vmin;
+  height: 43vmin;
+  left: calc(98vw - 10vw);
+  animation: bubble 2s ease-in 1.546s infinite;
 }
 
 .fire:nth-child(111) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(37vmin);
-  animation: bubble 0.6s linear 0.25s infinite;
+  width: 40vmin;
+  height: 40vmin;
+  left: calc(74vw - 10vw);
+  animation: bubble 2s ease-in 2.974s infinite;
 }
 
 .fire:nth-child(112) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(15vmin);
-  animation: bubble 0.6s linear 1.841s infinite;
+  width: 24vmin;
+  height: 24vmin;
+  left: calc(39vw - 10vw);
+  animation: bubble 2s ease-in 0.272s infinite;
 }
 
 .fire:nth-child(113) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(36vmin);
-  animation: bubble 0.6s linear 1.807s infinite;
+  width: 34vmin;
+  height: 34vmin;
+  left: calc(77vw - 10vw);
+  animation: bubble 2s ease-in 0.378s infinite;
 }
 
 .fire:nth-child(114) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(10vmin);
-  animation: bubble 0.6s linear 1.46s infinite;
+  width: 22vmin;
+  height: 22vmin;
+  left: calc(2vw - 10vw);
+  animation: bubble 2s ease-in 3.748s infinite;
 }
 
 .fire:nth-child(115) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(16vmin);
-  animation: bubble 0.6s linear 1.93s infinite;
+  width: 12vmin;
+  height: 12vmin;
+  left: calc(11vw - 10vw);
+  animation: bubble 2s ease-in 0.716s infinite;
 }
 
 .fire:nth-child(116) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(37vmin);
-  animation: bubble 0.6s linear 1.999s infinite;
+  width: 35vmin;
+  height: 35vmin;
+  left: calc(76vw - 10vw);
+  animation: bubble 2s ease-in 1.49s infinite;
 }
 
 .fire:nth-child(117) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(25vmin);
-  animation: bubble 0.6s linear 0.524s infinite;
+  width: 9vmin;
+  height: 9vmin;
+  left: calc(80vw - 10vw);
+  animation: bubble 2s ease-in 0.536s infinite;
 }
 
 .fire:nth-child(118) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(17vmin);
-  animation: bubble 0.6s linear 0.447s infinite;
+  width: 20vmin;
+  height: 20vmin;
+  left: calc(4vw - 10vw);
+  animation: bubble 2s ease-in 1.386s infinite;
 }
 
 .fire:nth-child(119) {
   position: absolute;
   width: 1vmin;
   height: 1vmin;
-  left: calc(5vmin);
-  animation: bubble 0.6s linear 0.095s infinite;
+  left: calc(95vw - 10vw);
+  animation: bubble 2s ease-in 0.804s infinite;
 }
 
 .fire:nth-child(120) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(9vmin);
-  animation: bubble 0.6s linear 1.514s infinite;
+  width: 33vmin;
+  height: 33vmin;
+  left: calc(78vw - 10vw);
+  animation: bubble 2s ease-in 1.05s infinite;
 }
 
 .fire:nth-child(121) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(36vmin);
-  animation: bubble 0.6s linear 1.94s infinite;
+  width: 26vmin;
+  height: 26vmin;
+  left: calc(49vw - 10vw);
+  animation: bubble 2s ease-in 2.96s infinite;
 }
 
 .fire:nth-child(122) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(28vmin);
-  animation: bubble 0.6s linear 1.929s infinite;
+  width: 7vmin;
+  height: 7vmin;
+  left: calc(55vw - 10vw);
+  animation: bubble 2s ease-in 1.024s infinite;
 }
 
 .fire:nth-child(123) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(28vmin);
-  animation: bubble 0.6s linear 1.448s infinite;
+  width: 50vmin;
+  height: 50vmin;
+  left: calc(54vw - 10vw);
+  animation: bubble 2s ease-in 2.242s infinite;
 }
 
 .fire:nth-child(124) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(8vmin);
-  animation: bubble 0.6s linear 0.935s infinite;
+  width: 40vmin;
+  height: 40vmin;
+  left: calc(20vw - 10vw);
+  animation: bubble 2s ease-in 3.526s infinite;
 }
 
 .fire:nth-child(125) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(3vmin);
-  animation: bubble 0.6s linear 1.354s infinite;
+  width: 46vmin;
+  height: 46vmin;
+  left: calc(50vw - 10vw);
+  animation: bubble 2s ease-in 2.202s infinite;
 }
 
 .fire:nth-child(126) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(31vmin);
-  animation: bubble 0.6s linear 0.618s infinite;
+  width: 40vmin;
+  height: 40vmin;
+  left: calc(39vw - 10vw);
+  animation: bubble 2s ease-in 0.918s infinite;
 }
 
 .fire:nth-child(127) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(25vmin);
-  animation: bubble 0.6s linear 0.206s infinite;
+  width: 20vmin;
+  height: 20vmin;
+  left: calc(39vw - 10vw);
+  animation: bubble 2s ease-in 0.284s infinite;
 }
 
 .fire:nth-child(128) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(36vmin);
-  animation: bubble 0.6s linear 1.541s infinite;
+  width: 38vmin;
+  height: 38vmin;
+  left: calc(25vw - 10vw);
+  animation: bubble 2s ease-in 0.852s infinite;
 }
 
 .fire:nth-child(129) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(7vmin);
-  animation: bubble 0.6s linear 1.049s infinite;
+  width: 6vmin;
+  height: 6vmin;
+  left: calc(43vw - 10vw);
+  animation: bubble 2s ease-in 2.428s infinite;
 }
 
 .fire:nth-child(130) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(26vmin);
-  animation: bubble 0.6s linear 1.016s infinite;
+  width: 18vmin;
+  height: 18vmin;
+  left: calc(53vw - 10vw);
+  animation: bubble 2s ease-in 1.826s infinite;
 }
 
 .fire:nth-child(131) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(39vmin);
-  animation: bubble 0.6s linear 1.94s infinite;
+  width: 41vmin;
+  height: 41vmin;
+  left: calc(70vw - 10vw);
+  animation: bubble 2s ease-in 1.7s infinite;
 }
 
 .fire:nth-child(132) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(29vmin);
-  animation: bubble 0.6s linear 0.445s infinite;
+  width: 20vmin;
+  height: 20vmin;
+  left: calc(63vw - 10vw);
+  animation: bubble 2s ease-in 2.342s infinite;
 }
 
 .fire:nth-child(133) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(3vmin);
-  animation: bubble 0.6s linear 0.599s infinite;
+  width: 33vmin;
+  height: 33vmin;
+  left: calc(21vw - 10vw);
+  animation: bubble 2s ease-in 0.252s infinite;
 }
 
 .fire:nth-child(134) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(3vmin);
-  animation: bubble 0.6s linear 1.034s infinite;
+  width: 40vmin;
+  height: 40vmin;
+  left: calc(90vw - 10vw);
+  animation: bubble 2s ease-in 3.868s infinite;
 }
 
 .fire:nth-child(135) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(20vmin);
-  animation: bubble 0.6s linear 0.462s infinite;
+  width: 34vmin;
+  height: 34vmin;
+  left: calc(11vw - 10vw);
+  animation: bubble 2s ease-in 0.984s infinite;
 }
 
 .fire:nth-child(136) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(33vmin);
-  animation: bubble 0.6s linear 1.109s infinite;
+  width: 22vmin;
+  height: 22vmin;
+  left: calc(43vw - 10vw);
+  animation: bubble 2s ease-in 2.208s infinite;
 }
 
 .fire:nth-child(137) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(18vmin);
-  animation: bubble 0.6s linear 0.235s infinite;
+  width: 34vmin;
+  height: 34vmin;
+  left: calc(74vw - 10vw);
+  animation: bubble 2s ease-in 0.628s infinite;
 }
 
 .fire:nth-child(138) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(34vmin);
-  animation: bubble 0.6s linear 0.679s infinite;
+  width: 13vmin;
+  height: 13vmin;
+  left: calc(92vw - 10vw);
+  animation: bubble 2s ease-in 1.096s infinite;
 }
 
 .fire:nth-child(139) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(24vmin);
-  animation: bubble 0.6s linear 0.224s infinite;
+  width: 8vmin;
+  height: 8vmin;
+  left: calc(24vw - 10vw);
+  animation: bubble 2s ease-in 0.026s infinite;
 }
 
 .fire:nth-child(140) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(36vmin);
-  animation: bubble 0.6s linear 0.37s infinite;
+  width: 40vmin;
+  height: 40vmin;
+  left: calc(3vw - 10vw);
+  animation: bubble 2s ease-in 3.488s infinite;
 }
 
 .fire:nth-child(141) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(34vmin);
-  animation: bubble 0.6s linear 0.479s infinite;
+  width: 45vmin;
+  height: 45vmin;
+  left: calc(82vw - 10vw);
+  animation: bubble 2s ease-in 2.78s infinite;
 }
 
 .fire:nth-child(142) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(18vmin);
-  animation: bubble 0.6s linear 1.211s infinite;
+  width: 5vmin;
+  height: 5vmin;
+  left: calc(91vw - 10vw);
+  animation: bubble 2s ease-in 2.278s infinite;
 }
 
 .fire:nth-child(143) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(27vmin);
-  animation: bubble 0.6s linear 0.266s infinite;
+  width: 39vmin;
+  height: 39vmin;
+  left: calc(30vw - 10vw);
+  animation: bubble 2s ease-in 1.25s infinite;
 }
 
 .fire:nth-child(144) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(39vmin);
-  animation: bubble 0.6s linear 0.673s infinite;
+  width: 23vmin;
+  height: 23vmin;
+  left: calc(91vw - 10vw);
+  animation: bubble 2s ease-in 1.336s infinite;
 }
 
 .fire:nth-child(145) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(9vmin);
-  animation: bubble 0.6s linear 0.774s infinite;
+  width: 8vmin;
+  height: 8vmin;
+  left: calc(55vw - 10vw);
+  animation: bubble 2s ease-in 0.68s infinite;
 }
 
 .fire:nth-child(146) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(25vmin);
-  animation: bubble 0.6s linear 0.631s infinite;
+  width: 14vmin;
+  height: 14vmin;
+  left: calc(99vw - 10vw);
+  animation: bubble 2s ease-in 2.27s infinite;
 }
 
 .fire:nth-child(147) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(15vmin);
-  animation: bubble 0.6s linear 1.094s infinite;
+  width: 36vmin;
+  height: 36vmin;
+  left: calc(5vw - 10vw);
+  animation: bubble 2s ease-in 0.25s infinite;
 }
 
 .fire:nth-child(148) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(1vmin);
-  animation: bubble 0.6s linear 0.429s infinite;
+  width: 42vmin;
+  height: 42vmin;
+  left: calc(18vw - 10vw);
+  animation: bubble 2s ease-in 2.688s infinite;
 }
 
 .fire:nth-child(149) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(3vmin);
-  animation: bubble 0.6s linear 1.148s infinite;
+  width: 42vmin;
+  height: 42vmin;
+  left: calc(31vw - 10vw);
+  animation: bubble 2s ease-in 0.524s infinite;
 }
 
 .fire:nth-child(150) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(38vmin);
-  animation: bubble 0.6s linear 0.856s infinite;
+  width: 37vmin;
+  height: 37vmin;
+  left: calc(18vw - 10vw);
+  animation: bubble 2s ease-in 1.918s infinite;
 }
 
 .fire:nth-child(151) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(12vmin);
-  animation: bubble 0.6s linear 1.964s infinite;
+  width: 31vmin;
+  height: 31vmin;
+  left: calc(4vw - 10vw);
+  animation: bubble 2s ease-in 2.34s infinite;
 }
 
 .fire:nth-child(152) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(16vmin);
-  animation: bubble 0.6s linear 1.52s infinite;
+  width: 8vmin;
+  height: 8vmin;
+  left: calc(44vw - 10vw);
+  animation: bubble 2s ease-in 1.73s infinite;
 }
 
 .fire:nth-child(153) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(2vmin);
-  animation: bubble 0.6s linear 0.367s infinite;
+  width: 30vmin;
+  height: 30vmin;
+  left: calc(58vw - 10vw);
+  animation: bubble 2s ease-in 0.686s infinite;
 }
 
 .fire:nth-child(154) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(4vmin);
-  animation: bubble 0.6s linear 1.312s infinite;
+  width: 39vmin;
+  height: 39vmin;
+  left: calc(28vw - 10vw);
+  animation: bubble 2s ease-in 2.194s infinite;
 }
 
 .fire:nth-child(155) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(37vmin);
-  animation: bubble 0.6s linear 0.962s infinite;
+  width: 7vmin;
+  height: 7vmin;
+  left: calc(31vw - 10vw);
+  animation: bubble 2s ease-in 0.63s infinite;
 }
 
 .fire:nth-child(156) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(39vmin);
-  animation: bubble 0.6s linear 0.111s infinite;
+  width: 41vmin;
+  height: 41vmin;
+  left: calc(21vw - 10vw);
+  animation: bubble 2s ease-in 0.968s infinite;
 }
 
 .fire:nth-child(157) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(17vmin);
-  animation: bubble 0.6s linear 0.426s infinite;
+  width: 44vmin;
+  height: 44vmin;
+  left: calc(97vw - 10vw);
+  animation: bubble 2s ease-in 0.81s infinite;
 }
 
 .fire:nth-child(158) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(25vmin);
-  animation: bubble 0.6s linear 1.293s infinite;
+  width: 36vmin;
+  height: 36vmin;
+  left: calc(39vw - 10vw);
+  animation: bubble 2s ease-in 2.782s infinite;
 }
 
 .fire:nth-child(159) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(39vmin);
-  animation: bubble 0.6s linear 0.359s infinite;
+  width: 8vmin;
+  height: 8vmin;
+  left: calc(32vw - 10vw);
+  animation: bubble 2s ease-in 3.574s infinite;
 }
 
 .fire:nth-child(160) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(30vmin);
-  animation: bubble 0.6s linear 0.091s infinite;
+  width: 47vmin;
+  height: 47vmin;
+  left: calc(6vw - 10vw);
+  animation: bubble 2s ease-in 3.016s infinite;
 }
 
 .fire:nth-child(161) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(28vmin);
-  animation: bubble 0.6s linear 1.932s infinite;
+  width: 8vmin;
+  height: 8vmin;
+  left: calc(42vw - 10vw);
+  animation: bubble 2s ease-in 0.152s infinite;
 }
 
 .fire:nth-child(162) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(38vmin);
-  animation: bubble 0.6s linear 0.278s infinite;
+  width: 31vmin;
+  height: 31vmin;
+  left: calc(70vw - 10vw);
+  animation: bubble 2s ease-in 3.29s infinite;
 }
 
 .fire:nth-child(163) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(11vmin);
-  animation: bubble 0.6s linear 0.798s infinite;
+  width: 6vmin;
+  height: 6vmin;
+  left: calc(80vw - 10vw);
+  animation: bubble 2s ease-in 0.88s infinite;
 }
 
 .fire:nth-child(164) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(20vmin);
-  animation: bubble 0.6s linear 1.913s infinite;
+  width: 42vmin;
+  height: 42vmin;
+  left: calc(20vw - 10vw);
+  animation: bubble 2s ease-in 0.272s infinite;
 }
 
 .fire:nth-child(165) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(29vmin);
-  animation: bubble 0.6s linear 0.28s infinite;
+  width: 30vmin;
+  height: 30vmin;
+  left: calc(89vw - 10vw);
+  animation: bubble 2s ease-in 2.658s infinite;
 }
 
 .fire:nth-child(166) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(12vmin);
-  animation: bubble 0.6s linear 0.492s infinite;
+  width: 17vmin;
+  height: 17vmin;
+  left: calc(90vw - 10vw);
+  animation: bubble 2s ease-in 2.922s infinite;
 }
 
 .fire:nth-child(167) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(33vmin);
-  animation: bubble 0.6s linear 0.629s infinite;
+  width: 22vmin;
+  height: 22vmin;
+  left: calc(13vw - 10vw);
+  animation: bubble 2s ease-in 2.036s infinite;
 }
 
 .fire:nth-child(168) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(22vmin);
-  animation: bubble 0.6s linear 1.884s infinite;
+  width: 48vmin;
+  height: 48vmin;
+  left: calc(28vw - 10vw);
+  animation: bubble 2s ease-in 0.758s infinite;
 }
 
 .fire:nth-child(169) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(28vmin);
-  animation: bubble 0.6s linear 0.112s infinite;
+  width: 37vmin;
+  height: 37vmin;
+  left: calc(34vw - 10vw);
+  animation: bubble 2s ease-in 3.618s infinite;
 }
 
 .fire:nth-child(170) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(27vmin);
-  animation: bubble 0.6s linear 1.446s infinite;
+  width: 34vmin;
+  height: 34vmin;
+  left: calc(52vw - 10vw);
+  animation: bubble 2s ease-in 0.56s infinite;
 }
 
 .fire:nth-child(171) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(38vmin);
-  animation: bubble 0.6s linear 1.335s infinite;
+  width: 41vmin;
+  height: 41vmin;
+  left: calc(3vw - 10vw);
+  animation: bubble 2s ease-in 3.528s infinite;
 }
 
 .fire:nth-child(172) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(17vmin);
-  animation: bubble 0.6s linear 1.463s infinite;
+  width: 27vmin;
+  height: 27vmin;
+  left: calc(64vw - 10vw);
+  animation: bubble 2s ease-in 1.75s infinite;
 }
 
 .fire:nth-child(173) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(6vmin);
-  animation: bubble 0.6s linear 0.476s infinite;
+  width: 32vmin;
+  height: 32vmin;
+  left: calc(26vw - 10vw);
+  animation: bubble 2s ease-in 3s infinite;
 }
 
 .fire:nth-child(174) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(15vmin);
-  animation: bubble 0.6s linear 0.371s infinite;
+  width: 30vmin;
+  height: 30vmin;
+  left: calc(51vw - 10vw);
+  animation: bubble 2s ease-in 0.312s infinite;
 }
 
 .fire:nth-child(175) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(22vmin);
-  animation: bubble 0.6s linear 0.064s infinite;
+  width: 5vmin;
+  height: 5vmin;
+  left: calc(3vw - 10vw);
+  animation: bubble 2s ease-in 3.45s infinite;
 }
 
 .fire:nth-child(176) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(25vmin);
-  animation: bubble 0.6s linear 0.093s infinite;
+  width: 48vmin;
+  height: 48vmin;
+  left: calc(96vw - 10vw);
+  animation: bubble 2s ease-in 0.542s infinite;
 }
 
 .fire:nth-child(177) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(3vmin);
-  animation: bubble 0.6s linear 0.826s infinite;
+  width: 33vmin;
+  height: 33vmin;
+  left: calc(86vw - 10vw);
+  animation: bubble 2s ease-in 0.288s infinite;
 }
 
 .fire:nth-child(178) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(23vmin);
-  animation: bubble 0.6s linear 0.33s infinite;
+  width: 44vmin;
+  height: 44vmin;
+  left: calc(4vw - 10vw);
+  animation: bubble 2s ease-in 1.608s infinite;
 }
 
 .fire:nth-child(179) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(35vmin);
-  animation: bubble 0.6s linear 0.049s infinite;
+  width: 35vmin;
+  height: 35vmin;
+  left: calc(64vw - 10vw);
+  animation: bubble 2s ease-in 0.1s infinite;
 }
 
 .fire:nth-child(180) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(5vmin);
-  animation: bubble 0.6s linear 0.261s infinite;
+  width: 5vmin;
+  height: 5vmin;
+  left: calc(37vw - 10vw);
+  animation: bubble 2s ease-in 3.654s infinite;
 }
 
 .fire:nth-child(181) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(40vmin);
-  animation: bubble 0.6s linear 1.19s infinite;
+  width: 35vmin;
+  height: 35vmin;
+  left: calc(69vw - 10vw);
+  animation: bubble 2s ease-in 1.812s infinite;
 }
 
 .fire:nth-child(182) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(9vmin);
-  animation: bubble 0.6s linear 1.67s infinite;
+  width: 50vmin;
+  height: 50vmin;
+  left: calc(63vw - 10vw);
+  animation: bubble 2s ease-in 0.2s infinite;
 }
 
 .fire:nth-child(183) {
   position: absolute;
   width: 2vmin;
   height: 2vmin;
-  left: calc(26vmin);
-  animation: bubble 0.6s linear 1.953s infinite;
+  left: calc(16vw - 10vw);
+  animation: bubble 2s ease-in 3.524s infinite;
 }
 
 .fire:nth-child(184) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(27vmin);
-  animation: bubble 0.6s linear 0.769s infinite;
+  width: 46vmin;
+  height: 46vmin;
+  left: calc(76vw - 10vw);
+  animation: bubble 2s ease-in 3.102s infinite;
 }
 
 .fire:nth-child(185) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(8vmin);
-  animation: bubble 0.6s linear 1.742s infinite;
+  width: 12vmin;
+  height: 12vmin;
+  left: calc(32vw - 10vw);
+  animation: bubble 2s ease-in 0.492s infinite;
 }
 
 .fire:nth-child(186) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(10vmin);
-  animation: bubble 0.6s linear 1.404s infinite;
+  width: 27vmin;
+  height: 27vmin;
+  left: calc(92vw - 10vw);
+  animation: bubble 2s ease-in 2.34s infinite;
 }
 
 .fire:nth-child(187) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(17vmin);
-  animation: bubble 0.6s linear 0.008s infinite;
+  width: 17vmin;
+  height: 17vmin;
+  left: calc(76vw - 10vw);
+  animation: bubble 2s ease-in 2.97s infinite;
 }
 
 .fire:nth-child(188) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(6vmin);
-  animation: bubble 0.6s linear 0.805s infinite;
+  width: 37vmin;
+  height: 37vmin;
+  left: calc(89vw - 10vw);
+  animation: bubble 2s ease-in 2.85s infinite;
 }
 
 .fire:nth-child(189) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(20vmin);
-  animation: bubble 0.6s linear 0.801s infinite;
+  width: 46vmin;
+  height: 46vmin;
+  left: calc(54vw - 10vw);
+  animation: bubble 2s ease-in 2.886s infinite;
 }
 
 .fire:nth-child(190) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(29vmin);
-  animation: bubble 0.6s linear 0.103s infinite;
+  width: 41vmin;
+  height: 41vmin;
+  left: calc(40vw - 10vw);
+  animation: bubble 2s ease-in 3.58s infinite;
 }
 
 .fire:nth-child(191) {
   position: absolute;
-  width: 1vmin;
-  height: 1vmin;
-  left: calc(21vmin);
-  animation: bubble 0.6s linear 1.371s infinite;
+  width: 18vmin;
+  height: 18vmin;
+  left: calc(62vw - 10vw);
+  animation: bubble 2s ease-in 3.452s infinite;
 }
 
 .fire:nth-child(192) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(33vmin);
-  animation: bubble 0.6s linear 1.96s infinite;
+  width: 16vmin;
+  height: 16vmin;
+  left: calc(66vw - 10vw);
+  animation: bubble 2s ease-in 0.288s infinite;
 }
 
 .fire:nth-child(193) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(40vmin);
-  animation: bubble 0.6s linear 0.452s infinite;
+  width: 11vmin;
+  height: 11vmin;
+  left: calc(75vw - 10vw);
+  animation: bubble 2s ease-in 2.776s infinite;
 }
 
 .fire:nth-child(194) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(10vmin);
-  animation: bubble 0.6s linear 1.383s infinite;
+  width: 18vmin;
+  height: 18vmin;
+  left: calc(76vw - 10vw);
+  animation: bubble 2s ease-in 3.73s infinite;
 }
 
 .fire:nth-child(195) {
   position: absolute;
-  width: 2vmin;
-  height: 2vmin;
-  left: calc(31vmin);
-  animation: bubble 0.6s linear 0.45s infinite;
+  width: 11vmin;
+  height: 11vmin;
+  left: calc(4vw - 10vw);
+  animation: bubble 2s ease-in 2.768s infinite;
 }
 
 .fire:nth-child(196) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(20vmin);
-  animation: bubble 0.6s linear 1.894s infinite;
+  width: 48vmin;
+  height: 48vmin;
+  left: calc(16vw - 10vw);
+  animation: bubble 2s ease-in 1.148s infinite;
 }
 
 .fire:nth-child(197) {
   position: absolute;
-  width: 4vmin;
-  height: 4vmin;
-  left: calc(30vmin);
-  animation: bubble 0.6s linear 1.606s infinite;
+  width: 5vmin;
+  height: 5vmin;
+  left: calc(46vw - 10vw);
+  animation: bubble 2s ease-in 2.122s infinite;
 }
 
 .fire:nth-child(198) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(27vmin);
-  animation: bubble 0.6s linear 1.859s infinite;
+  width: 8vmin;
+  height: 8vmin;
+  left: calc(31vw - 10vw);
+  animation: bubble 2s ease-in 3.194s infinite;
 }
 
 .fire:nth-child(199) {
   position: absolute;
-  width: 5vmin;
-  height: 5vmin;
-  left: calc(17vmin);
-  animation: bubble 0.6s linear 0.943s infinite;
+  width: 38vmin;
+  height: 38vmin;
+  left: calc(42vw - 10vw);
+  animation: bubble 2s ease-in 3.922s infinite;
 }
 
 .fire:nth-child(200) {
   position: absolute;
-  width: 3vmin;
-  height: 3vmin;
-  left: calc(6vmin);
-  animation: bubble 0.6s linear 0.185s infinite;
+  width: 1vmin;
+  height: 1vmin;
+  left: calc(44vw - 10vw);
+  animation: bubble 2s ease-in 3.622s infinite;
 }
 
 /*# sourceMappingURL=style.css.map */
