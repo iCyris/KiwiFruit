@@ -1,0 +1,64 @@
+/*
+ * Keyframes
+ */
+@keyframes water-drop {
+    0%  {
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-100px);
+    }
+}
+
+/*
+ * Stage
+ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.stage {
+    position: absolute;
+    width: 100%; height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0; top: 0;
+    background-color: #3b424e;
+    /* filter:contrast(50) */
+}
+
+.box-wrap {
+    position: absolute;
+    left: calc(50% - 200px);
+    top: 0;
+    bottom: 0;
+    width: 400px;
+    height: 100%;
+    /* height: 150px; */
+    filter: contrast(50);
+}
+
+.box {
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 10vh;
+    background-color: #03a9f4;
+    filter: blur(5px);
+}
+
+.droplet {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 10px);
+    animation: water-drop 1s linear infinite;
+    background-color: #03a9f4;
+    /* border-radius: 50% 1px 50% 50%; */
+    /* transform: rotate(-45deg); */
+    filter: blur(1px);
+}
